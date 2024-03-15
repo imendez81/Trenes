@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Negocios - Aventureros al Tren</title>
+
+  <!-- Favicons -->
+  <link href="img/fav_icon_tren.png" rel="icon">
+
+  <!-- Custom fonts for this template-->
+  <!-- <link href="fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"> -->
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid mt-3">
+
+          <!-- Page Heading -->
+
+            <h1 class="h3 mb-2 text-center" style="background-image: url(img/fondo_tren.webp); height: 100px; background-position: center; background-repeat: no-repeat;"><span class="mt-4" style="background-color: #7d77776f; color: black;">Aventureros al Tren <strong>Campeonato 2024</strong></span></h1>
+
+          <div class="row">
+
+            <!-- Area Chart -->
+            <div class="col-xl-6 col-lg-6">
+              <div class="card shadow mb-2 border-left-primary">
+                <div class="card-body" style="padding: 0.25rem;">
+                  <div class="table-responsive">
+                    <table class="table table-bordered table-hover table-sm" id="dataTable" width="100%" cellspacing="0">
+
+                    <thead class="text-center bg-primary" style="color: white;">
+                        <tr><th>Pos</th><th>Jugador</th><th>Pts</th></tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                          <td style="text-align: center;">1</td>
+                          <td style="padding-left: 9px;">Santino</td>
+                          <td style="text-align: center;">129</td>
+                      </tr>
+                      <tr>
+                          <td style="text-align: center;">2</td>
+                          <td style="padding-left: 9px;">Nacho</td>
+                          <td style="text-align: center;">98</td>
+                      </tr>
+                      <tr>
+                          <td style="text-align: center;">3</td>
+                          <td style="padding-left: 9px;">Ciro / Abuelo</td>
+                          <td style="text-align: center;">95</td>
+                      </tr>
+                      <tr>
+                          <td style="text-align: center;">4</td>
+                          <td style="padding-left: 9px;">Juan</td>
+                          <td style="text-align: center;">90</td>
+                      </tr>
+                      <tr>
+                          <td style="text-align: center;">5</td>
+                          <td style="padding-left: 9px;">Flor</td>
+                          <td style="text-align: center;">89</td>
+                      </tr>
+                      <tr>
+                          <td style="text-align: center;">6</td>
+                          <td style="padding-left: 9px;">Facu</td>
+                          <td style="text-align: center;">89</td>
+                      </tr>
+                      <!-- <tr>
+                          <td style="text-align: center;">7</td>
+                          <td></td>
+                          <td></td>
+                      </tr> -->
+                    </tbody>
+
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Area Chart -->
+            <div class="col-xl-6 col-lg-6">
+              <div class="card shadow mb-2 border-left-secondary">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-1 d-flex flex-row align-items-center">
+                  <h6 class="m-0 font-weight-bold text-secondary">Evolución Posiciones</h6>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body" style="height: 330px;">
+                  <div class="chart-area" style="height: 300px;">
+                    <canvas id="myAreaChart3360"></canvas>
+                  </div>
+                </div>
+                <!-- <div class="col mr-2 mb-4"><h6>Total Salidas de Depósito (Año 2020):</h6>
+                  <div class="h5 mb-0 font-weight-bold text-gray-800">704 unidades</div>
+                </div> -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <!-- <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Coordinación de Monitoreo y Seguimiento de Gestión - 2020</span>
+          </div>
+        </div> -->
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="jquery/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="chart.js/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-torta.js"></script>
+  <script src="js/demo/chart-pie-demo.js"></script>
+
+
+
+  <!-- Graficos JS -->
+  <script>
+
+    // Area Chart Papel Obra A3 - Mat. 3360
+      var ctx = document.getElementById("myAreaChart3360");
+        var myLineChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ["Fecha 1", "Fecha 2", "Fecha 3", "Fecha 4", "Fecha 5", "Fecha 6", "Fecha 7", "Fecha 8", "Fecha 9", "Fecha 10"],
+            datasets: [{
+            label: "Santino",
+            lineTension: 0.1,
+            backgroundColor: "rgba(255, 0, 93, 0.05)",
+            borderColor: "rgba(255, 0, 93, 1)",
+            pointRadius: 1,
+            pointBackgroundColor: "rgba(255, 0, 93, 1)",
+            pointBorderColor: "rgba(255, 0, 93, 1)",
+            pointHoverRadius: 1,
+            pointHoverBackgroundColor: "rgba(255, 0, 93, 1)",
+            pointHoverBorderColor: "rgba(255, 0, 93, 1)",
+            pointHitRadius: 10,
+            pointBorderWidth: 2,
+            data: [1],
+            },
+            {
+            label: "Nacho",
+            lineTension: 0.1,
+            backgroundColor: "rgba(122, 0, 93, 0.05)",
+            borderColor: "rgba(122, 0, 93, 1)",
+            pointRadius: 1,
+            pointBackgroundColor: "rgba(122, 0, 93, 1)",
+            pointBorderColor: "rgba(122, 0, 93, 1)",
+            pointHoverRadius: 1,
+            pointHoverBackgroundColor: "rgba(122, 0, 93, 1)",
+            pointHoverBorderColor: "rgba(122, 0, 93, 1)",
+            pointHitRadius: 10,
+            pointBorderWidth: 2,
+            data: [2],
+            },
+            {
+            label: "Ciro/Abuelo",
+            lineTension: 0.1,
+            backgroundColor: "rgba(78, 115, 223, 0.05)",
+            borderColor: "rgba(78, 115, 223, 1)",
+            pointRadius: 1,
+            pointBackgroundColor: "rgba(78, 115, 223, 1)",
+            pointBorderColor: "rgba(78, 115, 223, 1)",
+            pointHoverRadius: 1,
+            pointHoverBackgroundColor: "rgba(78, 115, 223, 1)",
+            pointHoverBorderColor: "rgba(78, 115, 223, 1)",
+            pointHitRadius: 10,
+            pointBorderWidth: 2,
+            data: [3],
+            },
+            {
+            label: "Juan",
+            lineTension: 0.1,
+            backgroundColor: "rgba(97, 145, 93, 0.05)",
+            borderColor: "rgba(97, 145, 93, 1)",
+            pointRadius: 1,
+            pointBackgroundColor: "rgba(97, 145, 93, 1)",
+            pointBorderColor: "rgba(97, 145, 93, 1)",
+            pointHoverRadius: 1,
+            pointHoverBackgroundColor: "rgba(97, 145, 93, 1)",
+            pointHoverBorderColor: "rgba(97, 145, 93, 1)",
+            pointHitRadius: 10,
+            pointBorderWidth: 2,
+            data: [4],
+            },
+            {
+            label: "Flor",
+            lineTension: 0.1,
+            backgroundColor: "rgba(222, 212, 93, 0.05)",
+            borderColor: "rgba(222, 212, 93, 1)",
+            pointRadius: 1,
+            pointBackgroundColor: "rgba(222, 212, 93, 1)",
+            pointBorderColor: "rgba(222, 212, 93, 1)",
+            pointHoverRadius: 1,
+            pointHoverBackgroundColor: "rgba(222, 212, 93, 1)",
+            pointHoverBorderColor: "rgba(222, 212, 93, 1)",
+            pointHitRadius: 10,
+            pointBorderWidth: 2,
+            data: [5],
+            },
+            {
+            label: "Facu",
+            lineTension: 0.1,
+            backgroundColor: "rgba(122, 122, 93, 0.05)",
+            borderColor: "rgba(122, 122, 93, 1)",
+            pointRadius: 1,
+            pointBackgroundColor: "rgba(122, 122, 93, 1)",
+            pointBorderColor: "rgba(122, 122, 93, 1)",
+            pointHoverRadius: 1,
+            pointHoverBackgroundColor: "rgba(122, 122, 93, 1)",
+            pointHoverBorderColor: "rgba(122, 122, 93, 1)",
+            pointHitRadius: 10,
+            pointBorderWidth: 2,
+            data: [6],
+            }
+          ],
+        },
+        options: {
+            maintainAspectRatio: false,
+            layout: {
+            padding: {
+                left: 10,
+                right: 25,
+                top: 25,
+                bottom: 0
+            }
+            },
+            scales: {
+            xAxes: [{
+                time: {
+                unit: 'date'
+                },
+                gridLines: {
+                display: true,
+                drawBorder: false
+                },
+                ticks: {
+                maxTicksLimit: 10
+                }
+            }],
+            yAxes: [{
+                ticks: {
+                reverse: true,
+                maxTicksLimit: 10,
+                padding: 10,
+                // Include a dollar sign in the ticks
+                callback: function(value, index, values) {
+                    return '' + number_format(value);
+                }
+                },
+                gridLines: {
+                color: "rgb(234, 236, 244)",
+                zeroLineColor: "rgb(234, 236, 244)",
+                drawBorder: false,
+                borderDash: [2],
+                zeroLineBorderDash: [2]
+                }
+            }],
+            },
+            legend: {
+            display: true, position: 'bottom'
+            },
+            tooltips: {
+            backgroundColor: "rgb(255,255,255)",
+            bodyFontColor: "#858796",
+            titleMarginBottom: 10,
+            titleFontColor: '#6e707e',
+            titleFontSize: 14,
+            borderColor: '#dddfeb',
+            borderWidth: 1,
+            xPadding: 15,
+            yPadding: 15,
+            displayColors: false,
+            intersect: false,
+            mode: 'index',
+            caretPadding: 10,
+            callbacks: {
+                label: function(tooltipItem, chart) {
+                var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
+                return datasetLabel + ': ' + number_format(tooltipItem.yLabel);
+                }
+            }
+            }
+        }
+        });
+
+
+  </script>
+
+</body>
+
+</html>
