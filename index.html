@@ -425,11 +425,28 @@
 
   <script>
   $('#dataTable').dataTable( {
+      //dom: '<"dt-top-container"<l><"dt-center-in-div"B><f>r>t<ip>',
+  	buttons: none,
       //columnDefs: [
       //{ targets: [0, 1, 2], className:'text-left dt-head-center' },
       //{ targets: [3, 4, 5, 6, 7, 8, 9], className:'text-right dt-head-center' },
       //{ targets: '_all', className:'dt-center' }
     //  ],
+   "language": {
+            "zeroRecords": "No se encontraron coincidencias.",
+            "paginate": {
+                "first": "Primera",
+                "last": "Última ",
+                "next": "  >>",
+                "previous": "<<  "                   
+            },
+            "sLengthMenu": "Mostrar de a _MENU_ resultados",
+            "emptyTable": "No hay datos disponibles en la tabla.",
+            "search": "Buscar... ",
+            "info": "Mostrando _START_ de _END_ (de _TOTAL_ resultados)",
+            "infoEmpty": "Mostrando 0 de 0 resultados",
+            "infoFiltered": "[filtrado de un total de _MAX_ resultados]"
+          },
     "order": [[1, 'desc'], [0, 'asc']],
     //"pageLength": 25
     }
@@ -438,11 +455,27 @@
 
   <script>
   $('#dataTable2').dataTable( {
+     buttons: none,
       //columnDefs: [
       //{ targets: [0, 1, 2], className:'text-left dt-head-center' },
       //{ targets: [3, 4, 5, 6, 7, 8, 9], className:'text-right dt-head-center' },
       // { targets: '_all', className:'dt-center' }
       //],
+    "language": {
+            "zeroRecords": "No se encontraron coincidencias.",
+            "paginate": {
+                "first": "Primera",
+                "last": "Última ",
+                "next": "  >>",
+                "previous": "<<  "                   
+            },
+            "sLengthMenu": "Mostrar de a _MENU_ resultados",
+            "emptyTable": "No hay datos disponibles en la tabla.",
+            "search": "Buscar... ",
+            "info": "Mostrando _START_ de _END_ (de _TOTAL_ resultados)",
+            "infoEmpty": "Mostrando 0 de 0 resultados",
+            "infoFiltered": "[filtrado de un total de _MAX_ resultados]"
+          },
     "order": [[1, 'asc']],
     //"pageLength": 25
     }
