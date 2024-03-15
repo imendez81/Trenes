@@ -21,6 +21,11 @@
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
+  <!-- Custom styles for this page -->
+  <link href="datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css">
+
 </head>
 
 <body id="page-top">
@@ -226,6 +231,16 @@
   <script src="js/demo/chart-torta.js"></script>
   <script src="js/demo/chart-pie-demo.js"></script>
 
+  <!-- Exportar a Excel DataTables CDN-->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>
+
 
 
   <!-- Graficos JS -->
@@ -401,11 +416,12 @@
 
   </script>
 
-  //<script>
-  //  $(document).ready(function() {
-  //  $('table.display').DataTable();
-  //  } );
-  //</script>
+  <!-- dataTable -->
+    <script>
+      $(document).ready(function() {
+      $('table.display').DataTable();
+      } );
+    </script>
 
   <script>
   $('#dataTable').dataTable( {
