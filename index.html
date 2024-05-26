@@ -52,12 +52,12 @@
             <div class="col-12 col-xl-1"></div>
 
             <!-- Area Chart -->
-            <div class="col-xl-6 col-lg-6">
+            <div class="col-xl-6 col-lg-6" style="display: none;">
               <div class="card shadow mb-2 border-left-primary">
 		<h6 class="m-0 font-weight-bold text-secondary ml-2 mt-3 mb-3">Tabla de Posiciones</h6>
                 <div class="card-body" style="padding: 0.25rem;">
                   <div class="table-responsive">
-		<style type="text/css">
+		                <style type="text/css">
                       .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
                         color: white !important;
                         border: 1px solid #36729b;
@@ -128,44 +128,72 @@
                       <tr>
                           <td style="text-align: center;">1</td>
                           <td style="padding-left: 9px;">Santino</td>
-                          <td style="text-align: center;">770</td>
+                          <td style="text-align: center;">872</td>
                       </tr>
                       <tr>
-                          <td style="text-align: center;">4</td>
+                          <td style="text-align: center;">5</td>
                           <td style="padding-left: 9px;">Juan</td>
                           <td style="text-align: center;">721</td>
                       </tr>
                       <tr>
                           <td style="text-align: center;">2</td>
                           <td style="padding-left: 9px;">Flor</td>
-                          <td style="text-align: center;">721</td>
+                          <td style="text-align: center;">817</td>
                       </tr>
                       <tr>
                           <td style="text-align: center;">3</td>
                           <td style="padding-left: 9px;">Facu</td>
-                          <td style="text-align: center;">721</td>
+                          <td style="text-align: center;">817</td>
                       </tr>
                       <tr>
                           <td style="text-align: center;">6</td>
                           <td style="padding-left: 9px;">Nacho</td>
-                          <td style="text-align: center;">584</td>
+                          <td style="text-align: center;">656</td>
                       </tr>
                       <tr>
-                          <td style="text-align: center;">5</td>
+                          <td style="text-align: center;">4</td>
                           <td style="padding-left: 9px;">Ciro - Abuelo</td>
-                          <td style="text-align: center;">643</td>
+                          <td style="text-align: center;">742</td>
                       </tr>
                       <tr>
-                          <td style="text-align: center;"><img src="img/fanta.png" alt="fantasma" style="height: 22px; padding-right: 5px;">8</td>
+                          <td style="text-align: center;">7</td>
                           <td style="padding-left: 9px;">Marti</td>
-                          <td style="text-align: center;">316</td>
+                          <td style="text-align: center;">394</td>
                       </tr>
 			<tr>
-                          <td style="text-align: center;">7</td>
+                          <td style="text-align: center;"><img src="img/fanta.png" alt="fantasma" style="height: 22px; padding-right: 5px;">8</td>
                           <td style="padding-left: 9px;">Ruli</td>
                           <td style="text-align: center;">365</td>
                       </tr>
                     </tbody>
+
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Area Chart -->
+            <div class="col-xl-6 col-lg-6">
+              <div class="card shadow mb-2 border-left-primary">
+                <h6 class="m-0 font-weight-bold text-secondary ml-2 mt-3 mb-3">Tabla de Posiciones <span class="text-primary h6">(10pts 1er puesto, 5pts 2do y 3pts 3er puesto)</span> </h6>
+                <div class="card-body" style="padding: 0.25rem;">
+                  <div class="table-responsive">
+                    <table class="table table-bordered table-hover table-sm" id="dataTable4" width="100%" cellspacing="0">
+
+                    <thead class="text-center bg-primary" style="color: white;">
+                        <tr><th class="bg-secondary">Jugador</th><th class="bg-success">Pts</th><th>Fecha 1</th><th>Fecha 2</th><th>Fecha 3</th><th>Fecha 4</th><th>Fecha 5</th><th>Fecha 6</th><th>Fecha 7</th><th>Fecha 8</th></tr>
+                    </thead>
+                      <tbody>
+                        <tr><td>Santi</td><td>50</td><td>10</td><td>10</td><td>-</td><td>5</td><td>-</td><td>10</td><td>5</td><td>10</td></tr>
+                        <tr><td>Juan</td><td>30</td><td>-</td><td>10</td><td>-</td><td>-</td><td>5</td><td>10</td><td>5</td><td>-</td></tr>
+                        <tr><td>Facu</td><td>27</td><td>-</td><td>5</td><td>5</td><td>3</td><td>3</td><td>5</td><td>3</td><td>3</td></tr>
+                        <tr><td>Flor</td><td>27</td><td>-</td><td>5</td><td>5</td><td>3</td><td>3</td><td>5</td><td>3</td><td>3</td></tr>
+                        <tr><td>Ciro - Abuelo</td><td>28</td><td>3</td><td>-</td><td>10</td><td>10</td><td>-</td><td>-</td><td>-</td><td>5</td></tr>
+                        <tr><td>Nacho</td><td>21</td><td>5</td><td>-</td><td>3</td><td>-</td><td>10</td><td>3</td><td>-</td><td>-</td></tr>
+                        <tr><td>Marti</td><td>13</td><td>-</td><td>3</td><td>-</td><td>-</td><td>-</td><td>-</td><td>10</td><td>-</td></tr>
+                        <tr><td>Ruli</td><td>0</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td></td><td>-</td></tr>
+                      </tbody>
 
                     </table>
                   </div>
@@ -190,14 +218,14 @@
                     </thead>
 
                     <tbody class="text-center">
-                      <tr><td class="text-left">Santi</td><td>770</td><td>110,00</td><td>7</td><td class="font-weight-bold">100%</td></tr>
-                      <tr><td class="text-left">Juan</td><td>721</td><td>103,00</td><td>7</td><th>100%</th></tr>
-                      <tr><td class="text-left">Flor</td><td>721</td><td>103,00</td><td>7</td><th>100%</th></tr>
-                      <tr><td class="text-left">Facu</td><td>721</td><td>103,00</td><td>7</td><th>100%</th></tr>
-                      <tr><td class="text-left">Nacho</td><td>584</td><td>97,30</td><td>6</td><th>86%</th></tr>
-                      <tr><td class="text-left">Marti</td><td>316</td><td>105,33</td><td>3</td><th>43%</th></tr>
-                      <tr><td class="text-left">Ciro - Abuelo</td><td class="align-middle">643</td><td class="align-middle">91,85</td><td class="align-middle">7</td><th>100%</th></tr>
-                      <tr><td style="text-align: center;" class="text-left"><img src="img/fanta.png" alt="fantasma" style="height: 22px; padding-right: 5px;">Ruli</td><td>365</td><td>91,25</td><td>4</td><th>57%</th></tr>
+                      <tr><td class="text-left">Santi</td><td>872</td><td>109,00</td><td>8</td><td class="font-weight-bold">100%</td></tr>
+                      <tr><td class="text-left">Juan</td><td>721</td><td>103,00</td><td>7</td><th>87%</th></tr>
+                      <tr><td class="text-left">Flor</td><td>817</td><td>102,12</td><td>8</td><th>100%</th></tr>
+                      <tr><td class="text-left">Facu</td><td>817</td><td>102,12</td><td>8</td><th>100%</th></tr>
+                      <tr><td class="text-left">Nacho</td><td>656</td><td>93,71</td><td>7</td><th>87%</th></tr>
+                      <tr><td class="text-left">Marti</td><td>394</td><td>98,50</td><td>5</td><th>50%</th></tr>
+                      <tr><td class="text-left">Ciro - Abuelo</td><td class="align-middle">742</td><td class="align-middle">92,75</td><td class="align-middle">7</td><th>100%</th></tr>
+                      <tr><td style="text-align: center;" class="text-left"><img src="img/fanta.png" alt="fantasma" style="height: 22px; padding-right: 5px;">Ruli</td><td>365</td><td>91,25</td><td>4</td><th>50%</th></tr>
                     </tbody>
 
                     </table>
@@ -219,18 +247,18 @@
                     <table class="table table-bordered table-hover table-sm" id="dataTable3" width="100%" cellspacing="0">
 
                     <thead class="text-center bg-primary" style="color: white;">
-                        <tr><th>Jugador</th><th>Fecha 1</th><th>Fecha 2</th><th>Fecha 3</th><th>Fecha 4</th><th>Fecha 5</th><th>Fecha 6</th><th>Fecha 7</th></tr>
+                        <tr><th>Jugador</th><th>Fecha 1</th><th>Fecha 2</th><th>Fecha 3</th><th>Fecha 4</th><th>Fecha 5</th><th>Fecha 6</th><th>Fecha 7</th><th>Fecha 8</th></tr>
                     </thead>
 
                     <tbody class="text-center">
-                      <tr><td class="text-left">Santi</td><td>129</td><td>106</td><td>84</td><td>112</td><td>113</td><td>113</td><td>113</td></tr>
-                      <tr><td class="text-left">Nacho</td><td>98</td><td>87</td><td>99</td><td>88</td><td>114</td><td>98</td><td>-</td></tr>
-                      <tr><td class="text-left">Ciro-Abuelo</td><td>95</td><td>69</td><td>107</td><td>129</td><td>93</td><td>58</td><td>92</td></tr>
-                      <tr><td class="text-left">Juan</td><td>90</td><td>106</td><td>88</td><td>98</td><td>113</td><td>113</td><td>113</td></tr>
-                      <tr><td class="text-left">Flor</td><td>89</td><td>105</td><td>103</td><td>102</td><td>112</td><td>109</td><td>101</td></tr>
-                      <tr><td class="text-left">Facu</td><td>89</td><td>105</td><td>103</td><td>102</td><td>112</td><td>109</td><td>101</td></tr>
-                      <tr><td class="text-left">Marti</td><td>-</td><td>99</td><td>88</td><td>-</td><td>-</td><td>-</td><td>129</td></tr>
-                      <tr><td class="text-left">Ruli</td><td>-</td><td>87</td><td>-</td><td>-</td><td>90</td><td>92</td><td>96</td></tr>
+                      <tr><td class="text-left">Santi</td><td>129</td><td>106</td><td>84</td><td>112</td><td>113</td><td>113</td><td>113</td><th>102</th></tr>
+                      <tr><td class="text-left">Nacho</td><td>98</td><td>87</td><td>99</td><td>88</td><td>114</td><td>98</td><td>-</td><th>72</th></tr>
+                      <tr><td class="text-left">Ciro-Abuelo</td><td>95</td><td>69</td><td>107</td><td>129</td><td>93</td><td>58</td><td>92</td><th>99</th></tr>
+                      <tr><td class="text-left">Juan</td><td>90</td><td>106</td><td>88</td><td>98</td><td>113</td><td>113</td><td>113</td><th>-</th></tr>
+                      <tr><td class="text-left">Flor</td><td>89</td><td>105</td><td>103</td><td>102</td><td>112</td><td>109</td><td>101</td><th>96</th></tr>
+                      <tr><td class="text-left">Facu</td><td>89</td><td>105</td><td>103</td><td>102</td><td>112</td><td>109</td><td>101</td><th>96</th></tr>
+                      <tr><td class="text-left">Marti</td><td>-</td><td>99</td><td>88</td><td>-</td><td>-</td><td>-</td><td>129</td><th>78</th></tr>
+                      <tr><td class="text-left">Ruli</td><td>-</td><td>87</td><td>-</td><td>-</td><td>90</td><td>92</td><td>96</td><th>-</th></tr>
                     </tbody>
 
                     </table>
@@ -243,37 +271,7 @@
             <div class="col-12 col-xl-1"></div>
             <div class="col-12 col-xl-1"></div>
 
-            <!-- Area Chart -->
-            <div class="col-xl-6 col-lg-6">
-              <div class="card shadow mb-2 border-left-primary">
-		            <h6 class="m-0 font-weight-bold text-secondary ml-2 mt-3 mb-3">Tabla de Posiciones <span class="text-primary h6">(10pts 1er puesto, 5pts 2do y 3pts 3er puesto)</span> </h6>
-                <div class="card-body" style="padding: 0.25rem;">
-                  <div class="table-responsive">
-                    <table class="table table-bordered table-hover table-sm" id="dataTable4" width="100%" cellspacing="0">
 
-                    <thead class="text-center bg-primary" style="color: white;">
-                        <tr><th>Jugador</th><th>Pts</th><th>Fecha 1</th><th>Fecha 2</th><th>Fecha 3</th><th>Fecha 4</th><th>Fecha 5</th><th>Fecha 6</th><th>Fecha 7</th></tr>
-                    </thead>
-                      <tbody>
-                        <tr><td>Santi</td><td>40</td><td>10</td><td>10</td><td>&nbsp;</td><td>5</td><td>&nbsp;</td><td>10</td><td>5</td></tr>
-                        <tr><td>Juan</td><td>30</td><td>&nbsp;</td><td>10</td><td>&nbsp;</td><td>&nbsp;</td><td>5</td><td>10</td><td>5</td></tr>
-                        <tr><td>Facu</td><td>24</td><td>&nbsp;</td><td>5</td><td>5</td><td>3</td><td>3</td><td>5</td><td>3</td></tr>
-                        <tr><td>Flor</td><td>24</td><td>&nbsp;</td><td>5</td><td>5</td><td>3</td><td>3</td><td>5</td><td>3</td></tr>
-                        <tr><td>Ciro - Abuelo</td><td>23</td><td>3</td><td>&nbsp;</td><td>10</td><td>10</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-                        <tr><td>Nacho</td><td>21</td><td>5</td><td>&nbsp;</td><td>3</td><td>&nbsp;</td><td>10</td><td>3</td><td>&nbsp;</td></tr>
-                        <tr><td>Marti</td><td>13</td><td>&nbsp;</td><td>3</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>10</td></tr>
-                        <tr><td>Ruli</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td></td></tr>
-                      </tbody>
-
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-xl-4"></div>
-            <div class="col-12 col-xl-1"></div>
-            <div class="col-12 col-xl-1"></div>
 
             <!-- Area Chart -->
             <div class="col-xl-6 col-lg-6">
@@ -345,7 +343,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
   <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
   <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>
-
+  <!-- <script src="https://cdn.datatables.net/2.0.7/js/dataTables.js"></script> -->
+  <script src="https://cdn.datatables.net/fixedcolumns/5.0.0/js/dataTables.fixedColumns.js"></script>
+  <script src="https://cdn.datatables.net/fixedcolumns/5.0.0/js/fixedColumns.dataTables.js"></script>
 
 
   <!-- Graficos JS -->
@@ -363,7 +363,7 @@
             pointRadius: 1, pointBackgroundColor: "rgba(255, 0, 93, 1)", pointBorderColor: "rgba(255, 0, 93, 1)",
             pointHoverRadius: 1, pointHoverBackgroundColor: "rgba(255, 0, 93, 1)", pointHoverBorderColor: "rgba(255, 0, 93, 1)",
             pointHitRadius: 10, pointBorderWidth: 2,
-            data: [1, 1, 1, 1, 1, 1, 1],
+            data: [1, 1, 1, 1, 1, 1, 1, 1],
             },
             {
             label: "Nacho",
@@ -371,7 +371,7 @@
             pointRadius: 1, pointBackgroundColor: "rgba(122, 0, 93, 1)", pointBorderColor: "rgba(122, 0, 93, 1)",
             pointHoverRadius: 1, pointHoverBackgroundColor: "rgba(122, 0, 93, 1)",
             pointHoverBorderColor: "rgba(122, 0, 93, 1)", pointHitRadius: 10, pointBorderWidth: 2,
-            data: [2, 5, 5, 6, 5, 4, 6],
+            data: [2, 5, 5, 6, 5, 4, 6, 6],
             },
             {
             label: "Ciro/Abuelo",
@@ -379,7 +379,7 @@
             pointRadius: 1, pointBackgroundColor: "rgba(78, 115, 223, 1)", pointBorderColor: "rgba(78, 115, 223, 1)",
             pointHoverRadius: 1, pointHoverBackgroundColor: "rgba(78, 115, 223, 1)",
             pointHoverBorderColor: "rgba(78, 115, 223, 1)", pointHitRadius: 10, pointBorderWidth: 2,
-            data: [3, 6, 6, 2, 4, 5, 5],
+            data: [3, 6, 6, 2, 4, 5, 5, 4],
             },
             {
             label: "Juan",
@@ -387,7 +387,7 @@
             pointRadius: 1, pointBackgroundColor: "rgba(97, 145, 93, 1)", pointBorderColor: "rgba(97, 145, 93, 1)",
             pointHoverRadius: 1, pointHoverBackgroundColor: "rgba(97, 145, 93, 1)", pointHoverBorderColor: "rgba(97, 145, 93, 1)",
             pointHitRadius: 10, pointBorderWidth: 2,
-            data: [4, 2, 4, 5, 3, 3, 2],
+            data: [4, 2, 4, 5, 3, 3, 2, 5],
             },
             {
             label: "Flor",
@@ -395,7 +395,7 @@
             pointRadius: 1, pointBackgroundColor: "rgba(222, 212, 93, 1)", pointBorderColor: "rgba(222, 212, 93, 1)",
             pointHoverRadius: 1, pointHoverBackgroundColor: "rgba(222, 212, 93, 1)", pointHoverBorderColor: "rgba(222, 212, 93, 1)",
             pointHitRadius: 10, pointBorderWidth: 2,
-            data: [5, 3, 2, 3, 2, 2, 2],
+            data: [5, 3, 2, 3, 2, 2, 2, 2],
             },
             {
             label: "Marti",
@@ -403,7 +403,7 @@
             pointBackgroundColor: "rgba(0, 0, 0, 1)", pointBorderColor: "rgba(0, 0, 0, 1)", pointHoverRadius: 1,
             pointHoverBackgroundColor: "rgba(0, 0, 0, 1)", ointHoverBorderColor: "rgba(0, 0, 0, 1)", pointHitRadius: 10,
             pointBorderWidth: 2,
-            data: [, 7, 7, 7, 7, 8, 8],
+            data: [, 7, 7, 7, 7, 8, 8, 7],
             },
             {
             label: "Ruli",
@@ -411,7 +411,7 @@
             pointRadius: 1, pointBackgroundColor: "rgba(245, 162, 73, 1)", pointBorderColor: "rgba(245, 162, 73, 1)",
             pointHoverRadius: 1, pointHoverBackgroundColor: "rgba(245, 162, 73, 1)", pointHoverBorderColor: "rgba(245, 162, 73, 1)",
             pointHitRadius: 10, pointBorderWidth: 2,
-            data: [, 8, 8, 8, 8, 7, 7],
+            data: [, 8, 8, 8, 8, 7, 7, 8],
             },
             {
             label: "Facu",
@@ -419,7 +419,7 @@
             pointRadius: 1, pointBackgroundColor: "rgba(122, 122, 93, 1)", pointBorderColor: "rgba(122, 122, 93, 1)",
             pointHoverRadius: 1, pointHoverBackgroundColor: "rgba(122, 122, 93, 1)", pointHoverBorderColor: "rgba(122, 122, 93, 1)",
             pointHitRadius: 10, pointBorderWidth: 2,
-            data: [5, 3, 2, 3, 2, 2, 2],
+            data: [5, 3, 2, 3, 2, 2, 2, 2],
             }
           ],
         },
@@ -602,8 +602,15 @@
   $('#dataTable4').dataTable( {
      dom: '<"dt-top-container"<l><"dt-center-in-div"B><f>r>t<ip>',
      buttons: ['pdf'],
+     fixedColumns:{
+                  start: 2
+                  },
+              paging: false,
+              scrollCollapse: true,
+              scrollY: '300px',
+              scrollX: true,
       columnDefs: [
-	//{targets: 2,
+	    //{targets: 2,
         // render: $.fn.dataTable.render.number('.', '')},
       { targets: [0], className:'text-left align-middle dt-head-center' },
       { targets: [1], className:'text-center font-weight-bold align-middle dt-head-center' },
