@@ -2,30 +2,32 @@
 <html lang="es">
 
 <head>
-
+ 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
+ 
   <title>Negocios - Aventureros al Tren</title>
-
   <!-- Favicons -->
   <link href="img/fav_icon_tren.png" rel="icon">
-
-  <!-- Custom fonts for this template-->
-  <!-- <link href="fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"> -->
+ 
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
-  <!-- Custom styles for this template-->
+ 
+  <!-- Custom styles for this template -->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this page -->
-  <link href="datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
-  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css">
-
+ 
+<!-- Custom styles for this page -->
+<link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/2.0.3/css/dataTables.dataTables.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/5.0.0/css/fixedColumns.dataTables.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/keytable/2.12.0/css/keyTable.dataTables.css">
+ 
 </head>
 
 <body id="page-top">
@@ -54,7 +56,7 @@
             <!-- Area Chart -->
             <div class="col-xl-6 col-lg-6" style="display: none;">
               <div class="card shadow mb-2 border-left-primary">
-		<h6 class="m-0 font-weight-bold text-secondary ml-2 mt-3 mb-3">Tabla de Posiciones</h6>
+		          <h6 class="m-0 font-weight-bold text-secondary ml-2 mt-3 mb-3">Tabla de Posiciones</h6>
                 <div class="card-body" style="padding: 0.25rem;">
                   <div class="table-responsive">
 		                <style type="text/css">
@@ -117,6 +119,15 @@
                         right: 0.5em;
                         content: "";
                     }
+                    .dt-search {
+                      display: none;
+                    }
+                    .dt-top-container{
+                      display: none;
+                    }
+                    .dt-paging{
+                      display: none;
+                    }
                     </style>
                     <table class="table table-bordered table-hover table-sm" id="dataTable" width="100%" cellspacing="0">
 
@@ -160,7 +171,7 @@
                           <td style="padding-left: 9px;">Marti</td>
                           <td style="text-align: center;">394</td>
                       </tr>
-			<tr>
+			                <tr>
                           <td style="text-align: center;"><img src="img/fanta.png" alt="fantasma" style="height: 22px; padding-right: 5px;">8</td>
                           <td style="padding-left: 9px;">Ruli</td>
                           <td style="text-align: center;">365</td>
@@ -247,7 +258,7 @@
                     <table class="table table-bordered table-hover table-sm" id="dataTable3" width="100%" cellspacing="0">
 
                     <thead class="text-center bg-primary" style="color: white;">
-                        <tr><th>Jugador</th><th>Fecha 1</th><th>Fecha 2</th><th>Fecha 3</th><th>Fecha 4</th><th>Fecha 5</th><th>Fecha 6</th><th>Fecha 7</th><th>Fecha 8</th></tr>
+                        <tr><th class="bg-success">Jugador</th><th>Fecha 1</th><th>Fecha 2</th><th>Fecha 3</th><th>Fecha 4</th><th>Fecha 5</th><th>Fecha 6</th><th>Fecha 7</th><th>Fecha 8</th></tr>
                     </thead>
 
                     <tbody class="text-center">
@@ -334,18 +345,22 @@
   <script src="js/demo/chart-torta.js"></script>
   <script src="js/demo/chart-pie-demo.js"></script>
 
-  <!-- Exportar a Excel DataTables CDN-->
+   <!-- Exportar a Excel DataTables CDN-->
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+  <!-- <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script> -->
   <script src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
   <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
   <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>
-  <!-- <script src="https://cdn.datatables.net/2.0.7/js/dataTables.js"></script> -->
+ 
+  <!-- <script src="https://code.jquery.com/jquery-3.7.1.js"></script> -->
+  <script src="https://cdn.datatables.net/2.0.3/js/dataTables.js"></script>
   <script src="https://cdn.datatables.net/fixedcolumns/5.0.0/js/dataTables.fixedColumns.js"></script>
   <script src="https://cdn.datatables.net/fixedcolumns/5.0.0/js/fixedColumns.dataTables.js"></script>
+  <script src="https://cdn.datatables.net/keytable/2.12.0/js/dataTables.keyTable.js"></script>
+  <script src="https://cdn.datatables.net/keytable/2.12.0/js/keyTable.dataTables.js"></script>
 
 
   <!-- Graficos JS -->
@@ -568,9 +583,9 @@
   <script>
   $('#dataTable3').dataTable( {
      dom: '<"dt-top-container"<l><"dt-center-in-div"B><f>r>t<ip>',
-     buttons: ['pdf'],
+    //  buttons: ['pdf'],
       columnDefs: [
-	//{targets: 2,
+	      //{targets: 2,
         // render: $.fn.dataTable.render.number('.', '')},
       { targets: [0], className:'text-left align-middle dt-head-center' },
       //{ targets: [3, 4, 5, 6, 7, 8, 9], className:'text-right dt-head-center' },
@@ -583,7 +598,7 @@
                 "first": "Primera",
                 "last": "Última ",
                 "next": "  >>",
-                "previous": "<<  "                   
+                "previous": "<<  "
             },
             "sLengthMenu": "Mostrar de a _MENU_ resultados",
             "emptyTable": "No hay datos disponibles en la tabla.",
@@ -592,6 +607,13 @@
             "infoEmpty": "Mostrando 0 de 0 resultados",
             "infoFiltered": "[filtrado de un total de _MAX_ resultados]"
           },
+          
+          fixedColumns: { start: 1 },
+          keys: true,
+          paging: false,
+          scrollCollapse: true,
+          scrollX: true,
+          scrollY: 600,
     "order": [[0, 'asc']],
     //"pageLength": 25
     }
@@ -601,7 +623,7 @@
 <script>
   $('#dataTable4').dataTable( {
      dom: '<"dt-top-container"<l><"dt-center-in-div"B><f>r>t<ip>',
-     buttons: ['pdf'],
+    //  buttons: ['pdf'],
       columnDefs: [
 	    //{targets: 2,
         // render: $.fn.dataTable.render.number('.', '')},
@@ -626,6 +648,12 @@
             "infoEmpty": "Mostrando 0 de 0 resultados",
             "infoFiltered": "[filtrado de un total de _MAX_ resultados]"
           },
+          fixedColumns: { start: 2 },
+          keys: true,
+          paging: false,
+          scrollCollapse: true,
+          scrollX: true,
+          scrollY: 600,
     "order": [[1, 'desc']],
     //"pageLength": 25
     }
